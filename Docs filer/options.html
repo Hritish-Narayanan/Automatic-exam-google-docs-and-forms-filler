@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Google Forms & Docs Auto-Answer Options</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #4285f4;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #3367d6;
+    }
+    .status {
+      margin-top: 15px;
+      padding: 10px;
+      border-radius: 4px;
+    }
+    .success {
+      background-color: #d4edda;
+      color: #155724;
+    }
+    .error {
+      background-color: #f8d7da;
+      color: #721c24;
+    }
+    .info {
+      background-color: #e2e3e5;
+      color: #383d41;
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Google Forms & Docs Auto-Answer Options</h1>
+  
+  <div class="form-group">
+    <label for="apiKey">z.ai API Key:</label>
+    <input type="text" id="apiKey" placeholder="Enter your z.ai API key here">
+  </div>
+  
+  <button id="saveButton">Save</button>
+  
+  <div id="status" class="status" style="display: none;"></div>
+  
+  <div class="info">
+    <p><strong>How to use:</strong></p>
+    <ol>
+      <li>Enter your z.ai API key above and click Save.</li>
+      <li>Navigate to any Google Form or Google Doc.</li>
+      <li>For Forms: The extension will automatically detect questions and fill in answers.</li>
+      <li>For Docs: Click the "AI Assist" button in the bottom-right corner to access AI features.</li>
+      <li>Review the generated content before submitting forms or finalizing documents.</li>
+    </ol>
+    <p><strong>Note:</strong> This extension requires a valid z.ai API key to function.</p>
+  </div>
+  
+  <script src="options.js"></script>
+</body>
+</html>
